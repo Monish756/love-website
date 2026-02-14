@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&display=swap');
+
+
+body{
+    margin:0;
+    font-family: 'Playfair Display', serif;
+
+    background:linear-gradient(135deg,#ff2e8a   ,#ffc0cb);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+/* center card */
+.center{
+    text-align:center;
+    background:rgba(255,255,255,0.08);
+    padding:60px 40px;
+    border-radius:25px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 40px rgba(0,0,0,0.3);
+}
+/* main title */
+h1{
+    font-size:50px;      /* big title */
+    font-weight:bold;
+}
+
+/* subtitle */
+h3{
+    font-size:28px;      /* subtitle big */
+    margin-top:10px;
+}
+
+.pinkBtn{
+    padding:25px 65px;      /* button perusa */
+    font-size:26px;         /* font big */
+    border:none;
+    border-radius:45px;
+    margin:18px;
+    background:#ff2e8a;     /* solid pink */
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    letter-spacing:1px;
+    box-shadow:0 0 20px #ff69b4;
+    transition:0.3s;
+}
+
+/* hover */
+.pinkBtn:hover{
+    transform:scale(1.18);
+    box-shadow:0 0 40px white,0 0 80px pink;
+}
+
+
+
+/* hidden */
+.hidden{
+    display:none;
+}
+
+/* animation page */
+.animBox{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:100px;
+}
+
+.dog,.cat{
+    width:250px;
+    transition:2s;
+}
+
+.moveDog{ transform:translateX(120px); }
+.moveCat{ transform:translateX(-120px); }
+
+.kiss{
+    width:500px;
+    margin-top:20px;
+}
+
+/* gift buttons */
+.giftBtns{
+    margin-top:40px;
+}
+
+.giftBtns button{
+    position:relative;
+    padding:30px 55px;
+    margin:25px;
+    font-size:24px;
+    border:none;
+    border-radius:18px;
+    background:linear-gradient(145deg,#ff69b4,#ff1493);
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    transition:0.4s;
+    overflow:hidden;
+}
+
+.giftBtns button:hover{
+    transform:scale(1.15);
+    box-shadow:0 0 25px white;
+}
+
+/* gift open */
+.openGift{
+    animation:openBox 0.8s forwards;
+}
+
+@keyframes openBox{
+    0%{transform:scale(1);}
+    40%{transform:scale(1.2) rotate(-6deg);}
+    70%{transform:scale(0.9) rotate(6deg);}
+    100%{transform:scale(1.1);}
+}
+
+img{
+    width:220px;
+    margin:10px;
+    border-radius:15px;
+}
+
+video{
+    width:320px;
+    margin-top:15px;
+}
+/* top cute gif */
+.topgif{
+    width:200px;
+    margin-bottom:15px;
+    animation:float 2s infinite ease-in-out;
+}
+
+/* floating animation */
+@keyframes float{
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-12px);}
+    100%{transform:translateY(0px);}
+}
+/* ===== PHOTO ALIGN FIX ===== */
+#content{
+    text-align:center;
+    margin-top:20px;
+}
+
+#content img{
+    width:260px;
+    height:360px;
+    object-fit:cover;
+    margin:20px;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+#content img:hover{
+    transform:scale(1.08);
+}

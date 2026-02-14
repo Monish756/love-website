@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<meta charset="UTF-8">
+<title>Our Story ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+
+
+<style>
+body{
+    margin:0;
+    font-family: 'Playfair Display', serif;
+    background:linear-gradient(135deg,#ffe0e6,#ffc0cb);
+    text-align:center;
+    color:black;
+}
+
+/* heading */
+h1{
+    margin-top:40px;
+    font-size:45px;
+}
+
+/* video */
+video{
+    width:320px;
+    margin-top:30px;
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+/* message */
+.msg{
+    margin-top:30px;
+    font-size:26px;
+}
+
+/* proposal button */
+.btn{
+    margin-top:30px;
+    padding:18px 40px;
+    font-size:22px;
+    border:none;
+    border-radius:40px;
+    background:white;
+    color:#ff1493;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* final text */
+.finalText{
+    display:none;
+    margin-top:40px;
+    font-size:35px;
+    animation:zoom 1s infinite alternate;
+}
+
+@keyframes zoom{
+    from{transform:scale(1);}
+    to{transform:scale(1.15);}
+}
+</style>
+</head>
+
+<body>
+
+<h1>Our Beautiful Journey 💕</h1>
+
+<video controls>
+<source src="video monish.mp4" type="video/mp4">
+</video>
+
+<div class="msg">
+Every moment with you is my favorite ❤️
+</div>
+
+<button class="btn" onclick="showLove()">Click here ❤️</button>
+
+<div class="finalText" id="loveText">
+I LOVE YOU SO MUCH 💖<br>
+Will you be mine forever? 💍
+</div>
+<audio id="bgmusic" autoplay loop>
+<source src="love.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function showLove(){
+document.getElementById("loveText").style.display="block";
+}
+
+document.addEventListener("click", function(){
+let music = document.getElementById("bgmusic");
+if(music.paused){
+music.play();
+}
+});
+</script>
+
+</body>
+</html>

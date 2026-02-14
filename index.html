@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Love 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- FIRST PAGE -->
+<div id="mainPage" class="center">
+    <img src="OIP.jpg" class="topgif">
+
+    <h1>Thangapulla 🤍<br>
+will you be my Valentine? 💖</h1>
+    <h3>You make my life beautiful ❤️</h3>
+
+    <button class="pinkBtn" onclick="startLove()">YES 💗</button>
+    <button class="pinkBtn" onclick="noClick()">NO 💗</button>
+</div>
+
+<!-- ANIMATION PAGE -->
+<div id="animationPage" class="center hidden">
+    <h2>Coming close... 🐱🐱</h2>
+
+    <div class="cats">
+        <img src="OIP (1).jpg" class="cat" id="cat1">
+        
+    </div>
+
+    <div class="kiss">💋</div>
+    <h2>Kiss for you 😘</h2>
+</div>
+
+<!-- GIFT PAGE -->
+<div id="giftPage" class="center hidden">
+    <h1>Choose Your Gift 🎁</h1>
+
+    <div class="giftBtns">
+        <button onclick="gift1()">🎁 Gift 1</button>
+        <button onclick="gift2()">💌 Gift 2</button>
+        <button onclick="gift3()">📸 Gift 3</button>
+    </div>
+
+    <div id="content"></div>
+</div>
+<audio id="bgmusic" loop>
+<source src="love.mp3" type="audio/mpeg">
+</audio>
+
+
+<script src="script.js"></script>
+</body>
+</html>

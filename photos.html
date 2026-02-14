@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+<meta charset="UTF-8">
+<title>Our Memories 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+
+
+<style>
+body{
+    margin:0;
+    font-family: 'Playfair Display', serif;
+    background:linear-gradient(135deg,#ffd1dc,#ffc0cb);
+    text-align:center;
+}
+
+h1{
+    padding-top:30px;
+    font-size:40px;
+    color:#444;
+}
+
+/* grid layout */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+    padding:40px;
+    max-width:900px;
+    margin:auto;
+}
+
+/* card */
+.card{
+    background:white;
+    padding:15px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* image */
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+/* caption */
+.caption{
+    margin-top:10px;
+    font-size:16px;
+    color:#555;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Our Beautiful Memories 💕</h1>
+
+<div class="gallery">
+
+<div class="card">
+<img src="monish 1.jpg">
+<div class="caption">The warmth of your hand erased years of loneliness!!! 🥹💖</div>
+</div>
+
+<div class="card">
+<img src="monish 2.jpg">
+<div class="caption">Holding you like I never want to lose you!!! 🤍</div>
+</div>
+
+<div class="card">
+<img src="monish 3.jpg">
+<div class="caption">Some hugs speak louder than “I love you”💋</div>
+</div>
+
+<div class="card">
+<img src="monish 4.jpg">
+<div class="caption">Behind the helmet, there’s a smile for you!! 💙</div>
+</div>
+
+</div>
+<audio id="bgmusic" autoplay loop>
+<source src="love.mp3" type="audio/mpeg">
+</audio>
+
+
+</body>
+</html>
+<script>
+document.addEventListener("click", function(){
+let music = document.getElementById("bgmusic");
+if(music.paused){
+music.play();
+}
+});
+</script>
